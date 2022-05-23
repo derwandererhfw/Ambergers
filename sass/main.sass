@@ -1,0 +1,261 @@
+$prime: #FF6E48
+$second: #0C1016
+
+img
+    display: flex
+    justify-content: center
+    align-items: center
+
+body, html
+    margin: 0
+    padding: 0
+    font-family: 'Roboto', sans-serif
+    width: 100%
+    min-height: 100%
+    font-size: 10px
+    display: flex
+    justify-content: center
+    align-items: center
+
+*
+    box-sizing: border-box
+
+header
+    position: absolute
+    top: 10rem
+    left: 0
+    width: 100%
+    height: 6rem
+    background-color: #ffffff
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    z-index: 9999
+    padding: 0 10rem 0 10rem
+    transition: box-shadow 500ms
+    transition: padding 500ms
+
+    &.fixed
+        top: 0
+        padding: 0
+        position: fixed
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2)
+
+        button
+            background-color: #000000
+            color: #ffffff
+
+        nav
+            ul
+                li
+                    margin: 0 4rem 0 0
+
+                    &:last-child
+                        margin: 0 0 0 0
+
+
+    .logo
+        padding: 0 5rem 0 5rem
+        display: flex
+        width: 15rem
+        justify-content: flex-start
+        align-items: center
+        flex-direction: row
+        
+        img
+            margin: 0 1rem 0 0
+            width: 4rem
+
+    button
+        background-color: #ffffff
+        font-size: 1.6rem
+        border: none
+        height: 100%
+        width: 15rem
+        padding: 0 5rem 0 5rem
+        transition: all 300ms
+
+    nav
+        display: flex
+        justify-content: center
+        align-content: center
+        flex-direction: row
+        ul
+            display: flex
+            justify-content: center
+            align-content: center
+            flex-direction: row
+
+            li
+                list-style: none
+                font-size: 1.6rem
+                margin: 0 10rem 0 0
+                transition: all 300ms
+
+                &:last-child
+                    margin: 0 0 0 0
+
+.details
+    position: absolute
+    top: 45rem
+    left: 0
+    font-size: 1.2rem
+    background-color: #ffffff
+    z-index: 7000
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: row
+    padding: 1.3rem 0 0.8rem 0
+    width: 100%
+    transition: box-shadow 500ms
+
+    &.fixed
+        position: fixed
+        top: 4.5rem
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3)
+
+main
+    padding: 30rem 0 10rem 0
+    display: flex
+    justify-content: flex-start
+    align-content: flex-start
+    flex-direction: column
+
+    h2
+        font-size: 5rem
+        font-weight: 900
+        text-align: center
+        text-transform: uppercase
+        margin: 0 0 0 0
+        padding: 0 0 0 0
+        font-family: 'Roboto', sans-serif
+
+    h4
+        text-align: center
+        font-size: 2.5rem
+        margin: 0 0 0 0
+        padding: 0 0 17rem 0
+
+    p
+        font-size: 2rem
+        line-height: 1.8em
+        text-align: justify
+        max-width: 65rem
+        font-family: 'Amiri', serif
+
+
+
+
+
+$prime: #ff6e48
+$ciBlue: #00FFF1
+$ciRed: #ff00aa
+$ciGreen: #46fcb4
+$second: #0c1016
+
+
+
+*
+    box-sizing: border-box
+.flex-card-wrapper
+    width: 90%
+    max-width: 60rem
+    height: 70vh
+    max-height: 50rem
+    display: flex
+    justify-content: space-between
+    align-items: stretch
+
+    .flex-card-container
+        margin: 0 10px 0 0
+        height: 100%
+        width: 10%
+        transition: 450ms all ease-in-out
+        border-radius: 20px
+        cursor: pointer
+        overflow: hidden
+        position: relative
+        background-position: center center
+        background-size: cover
+        background-repeat: no-repeat
+
+        &.active
+            width: 70%
+
+            .overlay
+                h3, p
+                    opacity: 1
+                    transform: translateX(0)
+
+                .icon
+                    width: 5rem
+                    height: 5rem
+
+                    img
+                        width: 2.5rem
+                        height: 2.5rem
+
+        &.bild-1
+            background-image: url(https://assets.codepen.io/907368/flexcard-1.jpg)
+
+        &.bild-2
+            background-image: url(https://assets.codepen.io/907368/flexcard-2.jpg)
+
+        &.bild-3
+            background-image: url(https://assets.codepen.io/907368/flexcard-3.jpg)
+
+        &.bild-4
+            background-image: url(https://assets.codepen.io/907368/flexcard-4.jpg)
+
+        &:last-child
+            margin: 0 0 0 0
+
+        .overlay
+            position: absolute
+            bottom: 0
+            left: 0
+            right: 0
+            z-index: 2
+            height: 9rem
+            padding: 0 0 2rem 1.5rem
+            display: flex
+            justify-content: flex-start
+            align-items: flex-end
+            width: 100%
+            transition: 450ms all ease-in-out
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%)
+
+            .icon
+                width: 3rem
+                height: 3rem
+                border-radius: 100%
+                background-color: $second
+                transition: 450ms all ease-in-out
+                display: flex
+                justify-content: center
+                align-items: center
+
+                img
+                    width: 1.5rem
+                    height: 1.5rem
+                    transition: 450ms all ease-in-out
+
+            h3
+                top: 0
+                font-size: 1.8rem
+                transition: 350ms 200ms all ease-in-out
+
+            p
+                top: 3rem
+                font-size: 1.2rem
+                transition: 350ms 300ms all ease-in-out
+
+            h3, p
+                color: white
+                position: absolute
+                left: 9rem
+                width: 20rem
+                opacity: 0
+                transform: translateX(-15px)
