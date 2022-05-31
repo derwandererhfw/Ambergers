@@ -294,15 +294,19 @@ main p {
 }
 
 .flex-card-wrapper .flex-card-container.bild-1 {
-  background-image: url(/images/agriculture-g1a293b945_1280.jpg);
+  background-image: url(https://assets.codepen.io/907368/flexcard-1.jpg);
 }
 
 .flex-card-wrapper .flex-card-container.bild-2 {
-  background-image: url(/images/ireland-g29a40f2d7_1280.jpg);
+  background-image: url(https://assets.codepen.io/907368/flexcard-2.jpg);
 }
 
 .flex-card-wrapper .flex-card-container.bild-3 {
-  background-image: url(/images/turkey-gbb8fa6282_1280.jpg);
+  background-image: url(https://assets.codepen.io/907368/flexcard-3.jpg);
+}
+
+.flex-card-wrapper .flex-card-container.bild-4 {
+  background-image: url(https://assets.codepen.io/907368/flexcard-4.jpg);
 }
 
 .flex-card-wrapper .flex-card-container:last-child {
