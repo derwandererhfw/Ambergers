@@ -1,0 +1,26 @@
+name: Deploying
+
+on:
+  push:
+    branches: [master]
+    release:
+      types:
+        - released
+
+  jobs:
+    deploy:
+      runs-on: ubuntu-latest
+
+      strategy:
+        matrix:
+          node-version: [12.x]
+
+      steps:
+        - uses: actions/checkout@v2
+
+        - name: Node Installieren & Bauen
+          uses: actions/setup-node@v1
+          with:
+            node-version: ${{ matrix.node-version}}
+        - run: npm i
+        - run: npm run build
